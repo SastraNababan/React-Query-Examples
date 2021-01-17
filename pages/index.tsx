@@ -1,15 +1,27 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import * as React from "react";
+import { Box, Text, Link, VStack, Grid } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { Logo } from "../components/Logo";
+import { ColorModeSwitcher } from "../components/ColorModeSwitcher";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const App = () => (
+  <Box textAlign="center" fontSize="xl">
+    <Grid minH="50vh" p={3}>
+      <ColorModeSwitcher justifySelf="flex-end" />
+      <VStack spacing={8}>
+        <Logo h="15vmin" pointerEvents="none" />
+        <Text fontSize="2xl" fontWeight="500">
+          React Query Examples
+        </Text>
 
-export default IndexPage
+        <NextLink href="crypto-market" passHref>
+          <Link color="teal.500" fontSize="xl">
+            Crypto Market
+          </Link>
+        </NextLink>
+      </VStack>
+    </Grid>
+  </Box>
+);
+
+export default App;

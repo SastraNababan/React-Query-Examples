@@ -8,11 +8,18 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.1.4",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^3.2.1",
     "next": "latest",
+    "next-images": "^1.6.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-icons": "^4.1.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
