@@ -10,6 +10,7 @@ import {
   Icon,
   Link,
   Spacer,
+  Text,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { FaGithub, FaYoutube } from "react-icons/fa";
@@ -17,9 +18,14 @@ import { FaGithub, FaYoutube } from "react-icons/fa";
 type Props = {
   children?: ReactNode;
   title?: string;
+  subTitle?: string;
 };
 
-const Layout = ({ children, title = "This is the default title" }: Props) => (
+const Layout = ({
+  children,
+  title = "This is the default title",
+  subTitle,
+}: Props) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -28,10 +34,21 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     </Head>
     <Container maxW={{ xl: "1200px" }} h="100vh">
       <Flex pt={10} pb={24}>
-        <Heading>Crypto Market</Heading>
+        <Box>
+          <Heading>{title}</Heading>
+          <Text
+            bgGradient="linear(to-l, #7928CA,#FF0080)"
+            bgClip="text"
+            fontWeight="extrabold"
+          >
+            {subTitle}
+          </Text>
+        </Box>
+
         <Spacer />
         <ColorModeSwitcher />
       </Flex>
+
       {children}
       <Box
         position="fixed"

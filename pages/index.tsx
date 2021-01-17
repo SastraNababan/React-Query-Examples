@@ -19,6 +19,11 @@ const App = () => (
             Crypto Market
           </Link>
         </NextLink>
+        <NextLink href="mama-muda" passHref>
+          <Link color="teal.500" fontSize="xl">
+            Mama Muda
+          </Link>
+        </NextLink>
       </VStack>
     </Grid>
   </Box>
