@@ -11,8 +11,8 @@ export default function Market() {
             <Th>Coin</Th>
             <Th>Last Price</Th>
             <Th>% Change</Th>
-            <Th isNumeric>High</Th>
-            <Th isNumeric>Low</Th>
+            <Th isNumeric>Total Volume</Th>
+            <Th isNumeric>Maket Cap</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -20,15 +20,15 @@ export default function Market() {
             <Td>BTC</Td>
             <Td>495460000</Td>
             <Td>-5.11</Td>
-            <Td isNumeric>536680000</Td>
-            <Td isNumeric>492420000</Td>
+            <Td isNumeric>729292071672270</Td>
+            <Td isNumeric>9600947757539514</Td>
           </Tr>
           <Tr>
             <Td>ETH</Td>
             <Td>16910000</Td>
             <Td>-1.45</Td>
-            <Td isNumeric>18150000</Td>
-            <Td isNumeric>16610000</Td>
+            <Td isNumeric>539816863146117</Td>
+            <Td isNumeric>2144364989936726</Td>
           </Tr>
         </Tbody>
       </Table>
