@@ -16,7 +16,9 @@
     "next-images": "^1.6.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-icons": "^4.1.0"
+    "react-hook-form": "^6.14.2",
+    "react-icons": "^4.1.0",
+    "react-query": "^3.6.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",

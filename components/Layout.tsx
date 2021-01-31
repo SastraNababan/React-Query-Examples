@@ -1,6 +1,3 @@
-import React, { ReactNode } from "react";
-// import Link from "next/link";
-import Head from "next/head";
 import {
   Box,
   Code,
@@ -12,8 +9,11 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+// import Link from "next/link";
+import Head from "next/head";
+import React, { ReactNode } from "react";
 import { FaGithub, FaYoutube } from "react-icons/fa";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 type Props = {
   children?: ReactNode;
@@ -48,8 +48,7 @@ const Layout = ({
         <Spacer />
         <ColorModeSwitcher />
       </Flex>
-
-      {children}
+      <Box pb={20}>{children}</Box>
       <Box
         position="fixed"
         bottom="0"
@@ -60,7 +59,7 @@ const Layout = ({
         py={2}
         w="full"
       >
-        <footer>
+        <footer style={{ backgroundColor: "white" }}>
           <Container maxW={{ xl: "1200px" }}>
             <Flex>
               <Box>
